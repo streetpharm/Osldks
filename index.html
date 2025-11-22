@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Rocket AI | AI-Powered Resume & Cover Letter Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Resume Rocket AI</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Paste your experience + job description. Get a perfectly tailored, ATS-friendly resume & cover letter in seconds – with quantifiable achievements and 3 style variations.</p>
+            <div class="max-w-lg mx-auto">
+                <form id="waitlist-form" class="flex flex-col md:flex-row gap-4">
+                    <input type="email" required placeholder="your@email.com" class="px-6 py-4 rounded-lg text-gray-900 flex-1">
+                    <button type="submit" class="bg-yellow-400 text-indigo-900 font-bold px-8 py-4 rounded-lg hover:bg-yellow-300 transition">Join Waitlist - Free</button>
+                    <script src="https://js.stripe.com/v3/buy-button.js"></script>
+                    <stripe-buy-button
+                      buy-button-id="buy_btn_1Qz3yourActualStripeButtonIdHere"
+                      publishable-key="pk_live_51SWA8uGyu71Okq5N35BQdaRRZhiWj52aQtbHZGrJVKpuGcqOGj7X6QCzcx8xNHjt047wU7T9jjCPdQx6oHX7VKSI00VabWu04K"
+                    >
+                    </stripe-buy-button>
+                </form>
+                <p class="mt-6 text-lg opacity-90">🚀 1,200+ job seekers already on the waitlist</p>
+                <p id="thank-you" class="mt-4 text-green-300 hidden font-bold text-xl">Thank you! You're on the list 🎉</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Why Job Seekers Love It</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl">⚡</div>
+                    <h3 class="text-2xl font-bold mb-4">Instant Results</h3>
+                    <p class="text-lg">3 tailored versions in <30 seconds</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl">🎯</div>
+                    <h3 class="text-2xl font-bold mb-4">ATS-Optimized</h3>
+                    <p class="text-lg">Score checker + keyword highlighter built-in</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl">💼</div>
+                    <h3 class="text-2xl font-bold mb-4">LinkedIn Bonus</h3>
+                    <p class="text-lg">One-click profile import & optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Features -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">v1 Bonus Features (Already Live)</h2>
+            <ul class="max-w-3xl mx-auto space-y-6 text-xl">
+                <li class="flex items-center"><span class="text-green-500 mr-4 text-2xl">✓</span> ATS score checker</li>
+                <li class="flex items-center"><span class="text-green-500 mr-4 text-2xl">✓</span> Keyword highlighter</li>
+                <li class="flex items-center"><span class="text-green-500 mr-4 text-2xl">✓</span> One-click LinkedIn PDF import</li>
+                <li class="flex items-center"><span class="text-green-500 mr-4 text-2xl">✓</span> Beautiful Canva PDF templates</li>
+                <li class="flex items-center"><span class="text-green-500 mr-4 text-2xl">✓</span> Final proofread via ChatGPT Canvas</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-16">Launch Pricing</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div class="border-4 border-indigo-600 rounded-2xl p-12">
+                    <h3 class="text-4xl font-bold mb-4">$14/month</h3>
+                    <p class="text-2xl mb-8">Unlimited resumes</p>
+                    <script src="https://js.stripe.com/v3/buy-button.js"></script>
+                    <stripe-buy-button
+                      buy-button-id="buy_btn_1Qz3yourMonthlyButtonIdHere"
+                      publishable-key="pk_live_51SWA8uGyu71Okq5N35BQdaRRZhiWj52aQtbHZGrJVKpuGcqOGj7X6QCzcx8xNHjt047wU7T9jjCPdQx6oHX7VKSI00VabWu04K"
+                    >
+                    </stripe-buy-button>
+                </div>
+                <div class="bg-indigo-600 text-white rounded-2xl p-12">
+                    <h3 class="text-4xl font-bold mb-4">$79 one-time</h3>
+                    <p class="text-2xl mb-4">Interview Guarantee Bundle</p>
+                    <p class="mb-8">(resume + LinkedIn review + 5 cover letters)</p>
+                    <script src="https://js.stripe.com/v3/buy-button.js"></script>
+                    <stripe-buy-button
+                      buy-button-id="buy_btn_1Qz3yourOneTimeButtonIdHere"
+                      publishable-key="pk_live_51SWA8uGyu71Okq5N35BQdaRRZhiWj52aQtbHZGrJVKpuGcqOGj7X6QCzcx8xNHjt047wU7T9jjCPdQx6oHX7VKSI00VabWu04K"
+                    >
+                    </stripe-buy-button>
+                </div>
+            </div>
+            <p class="mt-12 text-xl max-w-3xl mx-auto">People pay $99+ for human writers. Get better results instantly for a fraction of the price.</p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-8">Launch in 14 days</h2>
+            <p class="text-2xl mb-10">Be first in line. Join the waitlist now.</p>
+            <button onclick="document.getElementById('waitlist-form').scrollIntoView({behavior: 'smooth'})" class="bg-yellow-400 text-indigo-900 font-bold px-12 py-6 rounded-lg text-2xl hover:bg-yellow-300 transition">Get Early Access</button>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('thank-you').classList.remove('hidden');
+            this.querySelector('input').value = '';
+        });
+    </script>
+</body>
+</html>
